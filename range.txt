@@ -1,0 +1,17 @@
+x = (0..100)
+irb(main):033:0> x.include?(25)
+=> true
+irb(main):034:0> x.include?(79)
+=> true
+irb(main):035:0> x.include?(200)
+=> false
+irb(main):036:0> x.member?(59)
+=> true
+
+ x.last
+=> 100
+
+ x.max
+=> 100
+x.min
+=> 0

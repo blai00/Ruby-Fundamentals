@@ -1,0 +1,19 @@
+x = {"first_name" => "Brandon", "last_name" => "Lai"}
+
+puts x['first_name'] +" "+ x['last_name']
+Brandon Lai
+
+x.empty?
+=> false
+
+ x.has_key?('first_name')
+=> true
+x.has_key?('name')
+=> false
+
+x.has_value?('Brandon')
+=> true
+x.has_value?('Kevin')
+=> false
+x.has_value?('brandon')
+=> false
