@@ -1,5 +1,16 @@
 class Stack 
 	attr_accessor :stack
-	def initilize 
+	def initialize 
 		@stack = []
-end 
+		@stack.last(0)
+	end
+
+	# def data_store
+	# 	puts @stack
+	# end
+
+
+end
+
+stack1 = Stack.new
+puts stack1

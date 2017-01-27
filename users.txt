@@ -1,0 +1,11 @@
+user1 = User.new
+user1[:first_name] = 'Brandon'
+user1[:last_name] = 'Lai'
+user1[:email] = 'brandon.lai00@gmail.com'
+user1[:age] = '20'
+user1.save
+User.all
+User.first()
+User.last()
+User.ordered('first_name DESC')
+

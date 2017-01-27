@@ -1,0 +1,5 @@
+Post.find_by_blog_id(1)
+Post.find(1).udpate(title:"Updated_Title")
+Post.find(3).destroy
+Blog.all()
+Blog.where("id <?" , 5)

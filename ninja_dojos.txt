@@ -1,0 +1,16 @@
+rails new dojo_ninjas
+cd dojo_ninjas
+bundle install (add hirb to gemfile) 
+rails g model Dojo name:string city:string state:string
+rails g model Ninja first_name:string last_name:string dojo:references
+rake db:migrate
+rails c
+Hirb.enable
+Ninja.create(first_name:"Brandon", last_name:"Lai" dojo:Dojo.find(1))
+Ninja.create(first_name:"Michelle", last_name:"Chin" dojo:Dojo.find(1))
+Ninja.create(first_name:"Kevin", last_name:"Shu" dojo:Dojo.find(1))
+Ninja.create(first_name:"Calvin", last_name:"Lai" dojo:Dojo.find(3))
+Ninja.create(first_name:"Thomas", last_name:"Lai" dojo:Dojo.find(3))
+Ninja.create(first_name:"Nathan", last_name:"Lai" dojo:Dojo.find(3))
+
+
